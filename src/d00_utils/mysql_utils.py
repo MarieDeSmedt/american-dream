@@ -1,4 +1,5 @@
 import mysql.connector
+import matplotlib
 from sqlalchemy import create_engine
 
 
