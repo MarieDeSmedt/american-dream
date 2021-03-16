@@ -13,24 +13,11 @@ def connect_to_mysql():
         user=mysql_user,
         password=mysql_password)
     cursor = mydb.cursor()
-    cursor.execute("""CREATE DATABASE IF NOT EXISTS """ +database_name)
-    cursor.execute("""USE """+ database_name)
-    return cursor
-
-
-
-
-
-
-def create_my_engine():
-    """
-    connect to database
-    :return: engine
-    """
-    from conf.connect import mysql_user, database_name, mysql_password
-    engine = create_engine(
+    cursor.execute("""CREATE DATABASE IF NOT EXISTS """ + database_name)
+    cursor.execute("""USE """ + database_name)
+    db_connection = create_engine(
         'mysql+pymysql://{0}:{1}@localhost/{2}'.format(mysql_user, mysql_password, database_name))
-    return engine
+    return db_connection
 
 
 def save_to_mysql(db_connect, df_to_save, df_name):
