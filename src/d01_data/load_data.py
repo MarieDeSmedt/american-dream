@@ -8,7 +8,7 @@ cursor =ut.connect_to_mysql()
 
 
 #connect to database
-engine = ut.create_my_engine()
+engine = ut.connect_to_mysql()
 
 #-------------------------------------------------------------------------------------
 # create dataframe survey
