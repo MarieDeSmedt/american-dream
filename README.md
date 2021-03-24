@@ -6,27 +6,35 @@ Cela ne fait qu’un mois que vous faites de la data-science mais, ambitieux, vo
 
 -> data
 
-    -> 01_raw (fichier contenant les données brut)
+    -> 2020_Data_Professional_Salary_Survey_Responses.xlsx (fichier contenant les données brut)
     
-    -> 02_intermediate (fichier contenant les données travaillées)
-    
-    -> 03_processed (fichier contenant les données à envoyer en prod)
+    -> DataAnalyst.csv (fichier contenant les données brut)
 
 -> notebook
 
-    -> Data_analyse.ipybn (notebook d'analyse des données)
-  
-    -> Data_clean.ipybn (notebook de nettoyage des données)
+    -> Data_cleaning.ipybn (notebook de nettoyage des données)
+    
+    -> Data_visualization.ipybn (notebook de visualisation des données)
   
 -> src
 
     -> d00_utils (contient les méthodes utiles au projet)
+       
+       -> __init__.py (iniitialisation du module)
+       
+       -> mysql_utils.py (connection to mysql)
   
     -> d01_data (contient les méthodes de travail des données)
+       
+       -> __init__.py (iniitialisation du module)
+       
+       -> load_data.py (travail sur les données)
   
     -> d02_intermediate (contient les méthodes de visualisation)
+    
+       -> __init__.py (iniitialisation du module)
 
-- FOODFLIX.pptx (Présentation du projet)
+
 
 - requirements.txt (Contient les librairies et les versions utilisées)
 
@@ -87,5 +95,5 @@ Nan
 
 ## Acknowledgments
 
-* first read me ;)
+Nan
 
